@@ -26,9 +26,6 @@ public class MainActivity extends AppCompatActivity {
         etCentenas = findViewById(R.id.etCentenas);
         centenas = etCentenas.getText().toString();
 
-        //Bundle myBundle = new Bundle();
-        //myBundle.putString("Centenas", centenas);
-
         Intent myIntent = new Intent(this, MainActivity2.class);
         myIntent.putExtra("Centenas", centenas);
         startActivity(myIntent);
